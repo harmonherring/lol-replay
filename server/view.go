@@ -10,6 +10,7 @@ import (
 	"strings"
 	"time"
 
+	"github.com/dustin/go-humanize"
 	"github.com/harmonherring/lol-replay/recording"
 )
 
