@@ -14,9 +14,9 @@ import (
 	"sync"
 	"syscall"
 
-	"github.com/1lann/lol-replay/record"
-	"github.com/1lann/lol-replay/recording"
-	"github.com/1lann/lol-replay/replay"
+	"github.com/harmonherring/lol-replay/record"
+	"github.com/harmonherring/lol-replay/recording"
+	"github.com/harmonherring/lol-replay/replay"
 )
 
 type internalRecording struct {

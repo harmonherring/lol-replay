@@ -11,7 +11,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/1lann/lol-replay/recording"
+	"github.com/harmonherring/lol-replay/recording"
 	"github.com/pquerna/ffjson/ffjson"
 )
 

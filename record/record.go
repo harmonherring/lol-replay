@@ -9,7 +9,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/1lann/lol-replay/recording"
+	"github.com/harmonherring/lol-replay/recording"
 )
 
 var platformURLs = map[string]string{

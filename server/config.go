@@ -5,7 +5,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/1lann/lol-replay/record"
+	"github.com/harmonherring/lol-replay/record"
 )
 
 type configPlayer struct {

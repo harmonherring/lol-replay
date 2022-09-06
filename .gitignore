@@ -1,2 +1,3 @@
 *.glr
 .DS_Store
+.idea/

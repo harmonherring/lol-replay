@@ -11,8 +11,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/1lann/lol-replay/record"
-	"github.com/1lann/lol-replay/recording"
+	"github.com/harmonherring/lol-replay/record"
+	"github.com/harmonherring/lol-replay/recording"
 )
 
 var platformToRegion = map[string]string{

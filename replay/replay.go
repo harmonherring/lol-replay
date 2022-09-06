@@ -9,10 +9,10 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/1lann/lol-replay/record"
-	"github.com/1lann/lol-replay/recording"
 	"github.com/Clever/leakybucket"
 	memorybucket "github.com/Clever/leakybucket/memory"
+	"github.com/harmonherring/lol-replay/record"
+	"github.com/harmonherring/lol-replay/recording"
 	"github.com/julienschmidt/httprouter"
 )
 

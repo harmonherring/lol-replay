@@ -1,6 +1,6 @@
 FROM golang:1.7-alpine
 RUN apk add --no-cache git
-RUN go get -u github.com/1lann/lol-replay/server
+RUN go get -u github.com/harmonherring/lol-replay/server
 RUN mkdir /lol-replay
 RUN echo $'{\n\
         "players": [],\n\
