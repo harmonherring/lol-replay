@@ -1,4 +1,4 @@
-FROM golang:1.7-alpine
+FROM golang:1.18-alpine
 RUN apk add --no-cache git
 RUN go get -u github.com/harmonherring/lol-replay/server
 RUN mkdir /lol-replay
