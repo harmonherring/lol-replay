@@ -5,11 +5,10 @@ package record
 
 import (
 	"bytes"
+	"github.com/harmonherring/lol-replay/pkg/recording"
 	"log"
 	"os"
 	"time"
-
-	"github.com/harmonherring/lol-replay/recording"
 )
 
 var platformURLs = map[string]string{
@@ -35,6 +34,10 @@ type recorder struct {
 }
 
 var showDebug = os.Getenv("GLR_DEBUG") != ""
+
+func GetPlatform(platform string) string {
+	return platformURLs[platform]
+}
 
 func init() {
 	if showDebug {

@@ -8,5 +8,3 @@ require (
 	github.com/julienschmidt/httprouter v1.3.0
 	github.com/pquerna/ffjson v0.0.0-20190930134022-aa0246cd15f7
 )
-
-require github.com/dustin/go-humanize v1.0.0 // indirect

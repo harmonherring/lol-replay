@@ -3,6 +3,7 @@ package replay
 
 import (
 	"fmt"
+	"github.com/harmonherring/lol-replay/pkg/recording"
 	"log"
 	"net"
 	"net/http"
@@ -11,8 +12,6 @@ import (
 
 	"github.com/Clever/leakybucket"
 	memorybucket "github.com/Clever/leakybucket/memory"
-	"github.com/harmonherring/lol-replay/record"
-	"github.com/harmonherring/lol-replay/recording"
 	"github.com/julienschmidt/httprouter"
 )
 
@@ -69,17 +68,7 @@ func (p *httpWriterPipe) HasWritten() bool {
 }
 
 func (rh requestHandler) version(w http.ResponseWriter, r *http.Request, _ httprouter.Params) {
-	version, err := record.GetPlatformVersion("OC1")
-	if err != nil {
-		w.Header().Set("Content-Type", "text/plain")
-		w.WriteHeader(http.StatusInternalServerError)
-		w.Write([]byte("version unavailable"))
-		return
-	}
-
-	w.Header().Set("Content-Type", "text/plain")
-	w.WriteHeader(http.StatusOK)
-	w.Write([]byte(version))
+	w.Write([]byte("2.0.0"))
 	return
 }
 

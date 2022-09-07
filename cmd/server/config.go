@@ -4,8 +4,6 @@ import (
 	"encoding/json"
 	"log"
 	"os"
-
-	"github.com/harmonherring/lol-replay/record"
 )
 
 type configPlayer struct {

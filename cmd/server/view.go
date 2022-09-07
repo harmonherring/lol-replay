@@ -9,9 +9,6 @@ import (
 	"strconv"
 	"strings"
 	"time"
-
-	"github.com/dustin/go-humanize"
-	"github.com/harmonherring/lol-replay/recording"
 )
 
 type playerArg struct {
@@ -426,7 +423,7 @@ var pageSource = `<!DOCTYPE html>
 	<div class="container">
 		<div class="content">
 			<p>
-			<strong>LoL Replay</strong> by <a href="https://github.com/1lann" target="_blank">1lann</a>. The <a href="https://github.com/harmonherring/lol-replay" target="_blank">source code</a> is licensed under the <a href="https://github.com/harmonherring/lol-replay/blob/master/LICENSE" target="_blank">MIT license</a>.
+			<strong>LoL Replay</strong> by <a href="https://github.com/1lann" target="_blank">1lann</a>. The <a href="https://github.com/harmonherring/lol-replay" target="_blank">source code</a> is licensed under the <a href="https://github.com/harmonherring/lol-replay/pkgblob/master/LICENSE" target="_blank">MIT license</a>.
 			</p>
 			<p>
 			Page took {{.LoadTime}} ms to render.

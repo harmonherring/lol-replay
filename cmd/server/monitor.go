@@ -10,9 +10,6 @@ import (
 	"strconv"
 	"strings"
 	"time"
-
-	"github.com/harmonherring/lol-replay/record"
-	"github.com/harmonherring/lol-replay/recording"
 )
 
 var platformToRegion = map[string]string{

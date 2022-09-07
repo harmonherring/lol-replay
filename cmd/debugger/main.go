@@ -7,7 +7,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/harmonherring/lol-replay/recording"
+	"github.com/harmonherring/lol-replay/pkg/recording"
 )
 
 func main() {

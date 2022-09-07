@@ -1,7 +1,7 @@
 # LoL Replay
 [![Go Report Card](https://goreportcard.com/badge/github.com/harmonherring/lol-replay)](https://goreportcard.com/report/github.com/harmonherring/lol-replay)
 [![GoDoc](https://godoc.org/github.com/harmonherring/lol-replay?status.svg)](https://godoc.org/github.com/harmonherring/lol-replay)
-[![Docker Pulls](https://img.shields.io/docker/pulls/harmonherring/lol-replay.svg?maxAge=2592000)](https://hub.docker.com/r/harmonherring/lol-replay/) [![](https://images.microbadger.com/badges/image/harmonherring/lol-replay.svg)](https://microbadger.com/images/harmonherring/lol-replay "Get your own image badge on microbadger.com")
+[![Docker Pulls](https://img.shields.io/docker/pulls/harmonherring/lol-replay.svg?maxAge=2592000)](https://hub.docker.com/r/harmonherring/lol-replay/pkg) [![](https://images.microbadger.com/badges/image/harmonherring/lol-replay.svg)](https://microbadger.com/images/harmonherring/lol-replay "Get your own image badge on microbadger.com")
 
 LoL Replay is a collection of Go packages to record and play back League of Legends games from the spectator endpoint. It is designed to be fast, reliable, and efficient. The modular design allows anyone to write their own recording service in Go and manipulate the recording files.
 
@@ -17,17 +17,17 @@ If you would like package documentation, check the [GoDoc](https://godoc.org/git
 ## Server Setup
 LoL Replay currently assumes your client is running OS X and has [LoL Spectator](https://github.com/1lann/LoL-Spectator) installed to copy and paste replay links into. This should hopefully change to support Windows and OS X without additional programs soon.
 
-1. `go get -u github.com/harmonherring/lol-replay/server`
+1. `go get -u github.com/harmonherring/lol-replay/pkgserver`
 2. A binary called `server` will be installed to your `$GOPATH/bin`
-3. Download the [sample configuration](/server/config.sample.json).
+3. Download the [sample configuration](/cmd/server/config.sample.json).
 4. Configure to your liking. Note that platform IDs are taken from [here](https://developer.riotgames.com/docs/spectating-games).
 5. Server binary usage: `./server [configuration file location]`. If no configuration file location is specified, it will default to `config.json`.
 6. The web host will be running at the bind address specified in the configuration file. Try playing a game, and navigating your browser to it.
 
-If you need help, have an issue or want to ask a question, feel free to contact me by [email](mailto:me@chuie.io) or by making an issue on [GitHub](https://github.com/harmonherring/lol-replay/issues).
+If you need help, have an issue or want to ask a question, feel free to contact me by [email](mailto:me@chuie.io) or by making an issue on [GitHub](https://github.com/harmonherring/lol-replay/pkgissues).
 
 ## Using Docker
-The LoL Replay server is also available as an image on Docker. Refer to the [Docker Hub page](https://hub.docker.com/r/harmonherring/lol-replay/) for more information.
+The LoL Replay server is also available as an image on Docker. Refer to the [Docker Hub page](https://hub.docker.com/r/harmonherring/lol-replay/pkg) for more information.
 
 ## Screenshots
 

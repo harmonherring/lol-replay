@@ -4,6 +4,7 @@ package record
 
 import (
 	"errors"
+	"github.com/harmonherring/lol-replay/pkg/recording"
 	"io"
 	"io/ioutil"
 	"log"
@@ -11,7 +12,6 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/harmonherring/lol-replay/recording"
 	"github.com/pquerna/ffjson/ffjson"
 )
 
