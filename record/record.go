@@ -13,7 +13,7 @@ import (
 )
 
 var platformURLs = map[string]string{
-	"NA1":  "http://spectator.na.lol.riotgames.com:80",
+	"NA1":  "http://spectator.na1.lol.riotgames.com:80",
 	"OC1":  "http://spectator.oc1.lol.riotgames.com:80",
 	"EUN1": "http://spectator.eu.lol.riotgames.com:80",
 	"EUW1": "http://spectator.euw1.lol.riotgames.com:80",
